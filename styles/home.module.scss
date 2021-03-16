@@ -1,0 +1,48 @@
+@import '../styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.todoHeader {
+  padding-left: .75rem;
+  
+  div {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin-left: 1rem;
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    
+    input {
+      min-height: 2rem;
+      margin-right: .35rem;
+    }
+
+    button {
+      background-color: $color-orange-peel;
+      color: white;
+      font-weight: bold;
+      padding: .275rem;
+    }
+  }
+}
+
+.todoList {
+  width: 60%;
+
+  .deleteButton {
+    color: $color-imperial-red;
+  }
+}
